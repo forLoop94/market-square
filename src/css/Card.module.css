@@ -1,12 +1,13 @@
 /* Card.module.css */
 .card {
   background-size: cover;
-  border-radius: 4px;
+  border-radius: 0.5rem;
   overflow: hidden;
-  padding: 16px;
+  padding: 1.5rem;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  position: relative;
 }

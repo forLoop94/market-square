@@ -7,7 +7,7 @@ interface CardProps {
   bgColor?: keyof typeof backgroundColors,
   width?: string;
   height?: string;
-  children: [ReactElement<'h2'>, ReactElement<'p'>, ReactElement<'button'>];
+  children: [ReactElement<'h2'>, ReactElement<'p'>, ReactElement<'button'>, ReactElement<'img'>?];
 }
 
 const Card: React.FC<CardProps> = ({ background, bgColor, width = "300px", height = "200px", children }) => {
