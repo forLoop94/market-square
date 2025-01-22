@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from '../css/Card.module.css';
-import { backgrounds } from '../utilities/card-backgrounds';
+import { backgroundColors, backgroundImages } from '../utilities/card-backgrounds';
 
 interface CardProps {
-  background: keyof typeof backgrounds;
+  background?: keyof typeof backgroundImages;
+  bgColor?: keyof typeof backgroundColors,
   width?: string;
   height?: string;
-  children: React.ReactNode;
+  children: [ReactElement<'h2'>, ReactElement<'p'>, ReactElement<'button'>];
 }
 
-const Card: React.FC<CardProps> = ({ background, width = "300px", height = "200px", children }) => {
+const Card: React.FC<CardProps> = ({ background, bgColor, width = "300px", height = "200px", children }) => {
   const dynamicStyle = {
-    backgroundImage: `url(${backgrounds[background]})`,
+    backgroundImage: background ? `url(${backgroundImages[background]})` : '',
+    backgroundColor: bgColor ? `${backgroundColors[bgColor]}` : '',
     width: width,
     height: height,
   };
