@@ -1,5 +1,6 @@
 import './App.css'
 import Card from './components/Card'
+import CardImage from './components/CardImage'
 import image1 from './assets/cosmetic-items.png'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
           <Card bgColor='amber'>
             <h2>Product Name</h2>
             <p>Price: $99.99</p>
-            <img src={image1} alt="" className='card-image' />
+            <CardImage imageKey="cosmeticItems" text="random image" width="8rem" height="8rem" bottom="5%" right="2rem" />
             <button>Buy Now</button>
           </Card>
           <Card background='bubble'>

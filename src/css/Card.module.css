@@ -11,3 +11,8 @@
   align-items: start;
   position: relative;
 }
+
+.card-image {
+  position: absolute;
+  /*  */
+}

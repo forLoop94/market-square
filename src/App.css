@@ -3,14 +3,6 @@
   gap: 3rem;
 }
 
-.card-image {
-  position: absolute;
-  width: 12rem; /* Set the width of the image */
-  height: 12rem; /* Set the height of the image */
-  bottom: 5%; /* Align vertically */
-  right: 2rem;
-}
-
 .title {
   font-size: 1.7rem;
 }
