@@ -12,37 +12,8 @@ function App() {
           <Card bgColor='amber'>
             <h2>Product Name</h2>
             <p>Price: $99.99</p>
-            <CardImage imageKey="cosmeticItems" text="random image" width="8rem" height="8rem" bottom="5%" right="2rem" />
+            <CardImage imageKey="cosmeticItems" text="random image" width="12rem" height="12rem" bottom="5%" right="2rem" />
             <button>Buy Now</button>
-          </Card>
-          <Card background='bubble'>
-            <h2>Product Name</h2>
-            <p>Price: $99.99</p>
-            <button>Buy Now</button>
-          </Card>
-          <Card bgColor="blueSuperLight">
-            <h2>Product Name</h2>
-            <p>Price: $99.99</p>
-            <img src={image1} alt="" className='card-image' />
-            <button>Buy Now</button>
-          </Card>
-        </div>
-        <div className='flex'>
-          <Card bgColor="winterSky">
-            <h2>Product Name</h2>
-            <p>Price: $99.99</p>
-            <img src={image1} alt="" className='card-image' />
-            <button>Buy Now</button>
-          </Card>
-          <Card bgColor="blueSkyWarm">
-            <h2>Product Name</h2>
-            <p>Price: $99.99</p>
-            <button>Buy Now</button>
-          </Card>
-          <Card bgColor="cosmeticPurple">
-            <div className='title'>Stay dewy all winter, from $10</div>
-            <img src={image1} alt="" className='card-image' />
-            <a className='actionBtn'>shop_beauty</a>
           </Card>
         </div>
       </header>
